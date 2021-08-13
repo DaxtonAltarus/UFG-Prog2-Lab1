@@ -21,36 +21,18 @@ namespace Form1
         {
             
         }
-
         private void label3_Click(object sender, EventArgs e)
         {
 
         }
-
-        private void cmdtamaño_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            cManejoCadenas obj1 = new cManejoCadenas();//instancia a la clase
-            txtcaracteres.Text = Convert.ToString(obj1.tamaño(txtfrase.Text));
+            cManejoCadenas obj5 = new cManejoCadenas();//instancia a la clase
+            txtcaracteres.Text = Convert.ToString(obj5.tamaño(txtfrase.Text));
+            txtvocales.Text = Convert.ToString(obj5.vocales(txtfrase.Text));
+            txtconsonantes.Text = Convert.ToString(obj5.consonantes(txtfrase.Text));
+            txtpalabras.Text = Convert.ToString(obj5.palabras(txtfrase.Text));
         }
-
-        private void cmdnumvocales_Click(object sender, EventArgs e)
-        {
-            cManejoCadenas obj2 = new cManejoCadenas();
-            txtvocales.Text = Convert.ToString(obj2.vocales(txtfrase.Text));
-        }
-
-        private void cmdnumconso_Click(object sender, EventArgs e)
-        {
-            cManejoCadenas obj3 = new cManejoCadenas();
-            txtconsonantes.Text = Convert.ToString(obj3.consonantes(txtfrase.Text));
-        }
-
-        private void cmdnumpalabras_Click(object sender, EventArgs e)
-        {
-            cManejoCadenas obj4 = new cManejoCadenas();
-            txtpalabras.Text = Convert.ToString(obj4.palabras(txtfrase.Text));
-        }
-
         private void cmdlimpiar_Click(object sender, EventArgs e)
         {
             txtfrase.Clear();
@@ -64,5 +46,6 @@ namespace Form1
         {
             this.Close();
         }
+
     }
 }

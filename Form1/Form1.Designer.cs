@@ -39,12 +39,9 @@ namespace Form1
             this.txtvocales = new System.Windows.Forms.TextBox();
             this.txtconsonantes = new System.Windows.Forms.TextBox();
             this.txtpalabras = new System.Windows.Forms.TextBox();
-            this.cmdtamaño = new System.Windows.Forms.Button();
-            this.cmdnumvocales = new System.Windows.Forms.Button();
-            this.cmdnumconso = new System.Windows.Forms.Button();
-            this.cmdnumpalabras = new System.Windows.Forms.Button();
             this.cmdlimpiar = new System.Windows.Forms.Button();
             this.cmdsalir = new System.Windows.Forms.Button();
+            this.cmdcontar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -130,46 +127,6 @@ namespace Form1
             this.txtpalabras.Size = new System.Drawing.Size(118, 23);
             this.txtpalabras.TabIndex = 9;
             // 
-            // cmdtamaño
-            // 
-            this.cmdtamaño.Location = new System.Drawing.Point(302, 91);
-            this.cmdtamaño.Name = "cmdtamaño";
-            this.cmdtamaño.Size = new System.Drawing.Size(58, 22);
-            this.cmdtamaño.TabIndex = 10;
-            this.cmdtamaño.Text = "<--";
-            this.cmdtamaño.UseVisualStyleBackColor = true;
-            this.cmdtamaño.Click += new System.EventHandler(this.cmdtamaño_Click);
-            // 
-            // cmdnumvocales
-            // 
-            this.cmdnumvocales.Location = new System.Drawing.Point(302, 124);
-            this.cmdnumvocales.Name = "cmdnumvocales";
-            this.cmdnumvocales.Size = new System.Drawing.Size(58, 22);
-            this.cmdnumvocales.TabIndex = 11;
-            this.cmdnumvocales.Text = "<--";
-            this.cmdnumvocales.UseVisualStyleBackColor = true;
-            this.cmdnumvocales.Click += new System.EventHandler(this.cmdnumvocales_Click);
-            // 
-            // cmdnumconso
-            // 
-            this.cmdnumconso.Location = new System.Drawing.Point(302, 156);
-            this.cmdnumconso.Name = "cmdnumconso";
-            this.cmdnumconso.Size = new System.Drawing.Size(58, 22);
-            this.cmdnumconso.TabIndex = 12;
-            this.cmdnumconso.Text = "<--";
-            this.cmdnumconso.UseVisualStyleBackColor = true;
-            this.cmdnumconso.Click += new System.EventHandler(this.cmdnumconso_Click);
-            // 
-            // cmdnumpalabras
-            // 
-            this.cmdnumpalabras.Location = new System.Drawing.Point(302, 190);
-            this.cmdnumpalabras.Name = "cmdnumpalabras";
-            this.cmdnumpalabras.Size = new System.Drawing.Size(58, 22);
-            this.cmdnumpalabras.TabIndex = 13;
-            this.cmdnumpalabras.Text = "<--";
-            this.cmdnumpalabras.UseVisualStyleBackColor = true;
-            this.cmdnumpalabras.Click += new System.EventHandler(this.cmdnumpalabras_Click);
-            // 
             // cmdlimpiar
             // 
             this.cmdlimpiar.Location = new System.Drawing.Point(57, 255);
@@ -190,17 +147,25 @@ namespace Form1
             this.cmdsalir.UseVisualStyleBackColor = true;
             this.cmdsalir.Click += new System.EventHandler(this.cmdsalir_Click);
             // 
+            // cmdcontar
+            // 
+            this.cmdcontar.Location = new System.Drawing.Point(322, 91);
+            this.cmdcontar.Name = "cmdcontar";
+            this.cmdcontar.Size = new System.Drawing.Size(94, 123);
+            this.cmdcontar.TabIndex = 16;
+            this.cmdcontar.Text = "Contar";
+            this.cmdcontar.UseVisualStyleBackColor = true;
+            this.cmdcontar.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightGreen;
             this.ClientSize = new System.Drawing.Size(477, 314);
+            this.Controls.Add(this.cmdcontar);
             this.Controls.Add(this.cmdsalir);
             this.Controls.Add(this.cmdlimpiar);
-            this.Controls.Add(this.cmdnumpalabras);
-            this.Controls.Add(this.cmdnumconso);
-            this.Controls.Add(this.cmdnumvocales);
-            this.Controls.Add(this.cmdtamaño);
             this.Controls.Add(this.txtpalabras);
             this.Controls.Add(this.txtconsonantes);
             this.Controls.Add(this.txtvocales);
@@ -230,12 +195,9 @@ namespace Form1
         private System.Windows.Forms.TextBox txtvocales;
         private System.Windows.Forms.TextBox txtconsonantes;
         private System.Windows.Forms.TextBox txtpalabras;
-        private System.Windows.Forms.Button cmdtamaño;
-        private System.Windows.Forms.Button cmdnumvocales;
-        private System.Windows.Forms.Button cmdnumconso;
-        private System.Windows.Forms.Button cmdnumpalabras;
         private System.Windows.Forms.Button cmdlimpiar;
         private System.Windows.Forms.Button cmdsalir;
+        private System.Windows.Forms.Button cmdcontar;
     }
 }
 
